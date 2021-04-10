@@ -7,12 +7,13 @@ body {
 }
 
 .logo-top {
+    position: absolute;
     padding: 30px;
 }
 
 .my-text {
-    margin-left: 370px;
-    margin-top: 20px;
+    margin-left: 180px;
+    margin-top: 90px;
     
 }
 
@@ -20,13 +21,14 @@ body {
     width: 400px;
     height: 100px;
     color: #15E1FB;
-    font-weight: 200;
+    font-weight: 50;
     font-size: 50px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .my-text h2 span {
-    font-weight: 800;
+    font-weight: 700;
+    text-transform: capitalize;
 }
 
 .my-text p {
@@ -35,16 +37,13 @@ body {
     width: 330px;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-.my-img {
 
-    margin-top:10px;
-    width: 600px;
-    height: 600px;
-    margin-left: 200px;
+.my-img {
+  
+    width: 100%;
+    height: 630px;
+   margin-top:30px;
+    margin-left: 10px;
     
     
 }
@@ -52,23 +51,21 @@ body {
 .my-img-text {
     position: absolute;
     height: 350px;
-   left: 870px;
-   margin-top: 250px;
+   left: 800px;
+   margin-top: 300px;
 }
 
 form {
     margin-bottom: 10%;
     position: absolute;
-    margin-left: 26%;
+    margin-left: 12%;
 }
 
 form input.text-side {
     background-color: white;
-    box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
     width:540px;
     height: 50px;
     border-radius: 30px;
-    
     border: 0;
 }
 
@@ -90,29 +87,192 @@ input:focus {
 .message-text {
 
     position: absolute;
-    margin-top: 5%;
-    margin-left: 28%;
+    margin-top: 4%;
+    margin-left: 15%;
 
     color: white;
 }
 
 .message-icon {
     position: absolute;
-    margin-top: 5%;
-    margin-left: 26%;
+    margin-top: 4%;
+    margin-left: 13%;
     
 }
 
 .linee {
    position: absolute;
    left: 20px;
-   bottom: 17%;
+   bottom: 10%;
    
 }
 
 .footer-text {
     position: absolute;
-    bottom: 8%;
+    bottom: 2%;
     color: white;
     margin-left: 7px;
 }
+
+@media  screen and (max-width: 1000px) {
+    .my-text {
+        position: relative;
+        margin-left: 50px;
+       
+        
+    }
+    
+    .my-text h2 {
+        width: 400px;
+        font-size: 50px;
+    }
+
+    .my-img-text {
+        position: absolute;
+        height: 350px;
+       margin-right: 100%;
+       margin-top: 300px;
+    }
+    
+    form {
+        margin-bottom: 10%;
+        position: absolute;
+        margin-left: 5%;
+    }
+    
+    form input.text-side {
+        background-color: white;
+        width:420px;
+        height: 50px;
+        border-radius: 30px;
+        border: 0;
+    }
+    
+    .message-text {
+
+        position: absolute;
+        margin-top: 6%;
+        margin-left: 9%;
+    
+        color: white;
+    }
+    
+    .message-icon {
+        position: absolute;
+        margin-top: 6%;
+        margin-left: 6%;
+        
+    }
+
+ 
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+    .my-text {
+     position: relative;  
+   margin-left: 1rem;
+   bottom: 10px;
+   text-align: center;
+    
+}
+
+.my-text h2 {
+    position: relative;
+    text-align: center;
+    width: 330px;
+    padding-top:  30px;
+    font-size: 40px;
+    
+}
+
+.my-text h2 span {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.my-text p {
+    color: white;
+    margin-top: 100px;
+    width: 330px;
+}
+
+    .my-img {
+  
+        display: none;
+   
+    }
+
+    .linee {
+        position: absolute;
+      
+        top: 580px;
+        width: 90%;
+        
+     }
+
+     form {
+         align-items: center;
+        padding-bottom: 40%;
+        position: relative;
+        margin-right: 20%;
+    }
+    
+    form input.text-side {
+        background-color: white;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+        width:350px;
+        height: 40px;
+        border-radius: 30px;
+       right: 15;
+        border: 0;
+        position: relative;
+    }
+    
+    form input.btn-side {
+        left: 235px;
+        
+        height: 40px;
+        border-radius: 30px;
+        border: 0;
+        background-color: #15E4FF;
+        bottom: 40;
+        padding-left: 30px;
+        width:100px;
+        position: relative;
+        
+    }
+
+    .message-text {
+        position: absolute;
+        color: white;
+        bottom: 70px;
+        padding-left:15px;
+        font-size: 13px;
+    }
+    
+    .message-icon {
+        
+        position: absolute;
+        bottom: 85px;
+     
+       font-size: 10px;
+        
+    }
+
+    
+     .footer-text {
+         position: absolute;
+         top: 600px;
+         color: white;
+         margin-left: 7px;
+     }
+     
+  
+     
+}
+
+
